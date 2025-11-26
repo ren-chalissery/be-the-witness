@@ -165,15 +165,67 @@
 
   .nav-enquiry {
     margin-left: 0;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--accent-color);
+    background: rgba(217, 119, 87, 0.1);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
   }
 
   .btn-enquiry {
     display: block;
     text-align: center;
     width: 100%;
+    padding: 16px 24px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(217, 119, 87, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* Sticky floating enquiry button for mobile only */
+.mobile-enquiry-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-enquiry-btn {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-warm) 100%);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 8px 25px rgba(217, 119, 87, 0.6), 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    max-width: calc(100vw - 40px);
+  }
+
+  .mobile-enquiry-btn:hover,
+  .mobile-enquiry-btn:active {
+    background: linear-gradient(135deg, var(--accent-warm) 0%, #f5b882 100%);
+    transform: translateX(-50%) translateY(-3px);
+    box-shadow: 0 10px 30px rgba(217, 119, 87, 0.7), 0 6px 15px rgba(0, 0, 0, 0.4);
   }
 }
 
