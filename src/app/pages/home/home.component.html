@@ -1,0 +1,59 @@
+<section class="hero">
+  <div class="hero-background">
+    <img [src]="mainImage" alt="Be The Witness" class="hero-image">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title">{{ heroTitle }}</h1>
+    <p class="hero-subtitle">{{ heroSubtitle }}</p>
+    <div class="hero-cta">
+      <a routerLink="/welcome" class="btn">Get Started</a>
+      <a routerLink="/songs" class="btn btn-secondary">Explore Songs</a>
+    </div>
+  </div>
+</section>
+
+<section class="section experience-section">
+  <div class="container">
+    <div class="card fade-in">
+      <h2>{{ experience.title }}</h2>
+      <p class="lead">{{ experience.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section quick-links-section">
+  <div class="container">
+    <h2 class="section-title">Explore The Witness</h2>
+    <div class="quick-links-grid">
+      <div class="quick-link-card card" *ngFor="let link of quickLinks">
+        <h3>{{ link.title }}</h3>
+        <p>{{ link.description }}</p>
+        <a [routerLink]="link.route" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section gallery-section">
+  <div class="container">
+    <h2 class="section-title">Gallery</h2>
+    <div class="image-gallery">
+      <div class="gallery-item" *ngFor="let image of galleryImages">
+        <img [src]="image" alt="The Witness" (click)="openImage(image)" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section quote-section">
+  <div class="container">
+    <div class="quote-card card">
+      <blockquote>
+        <p>"So if You find it in Your heart to let me start again, I'll be Your witness Lord, Your witness Lord, Your witness to the end of my life."</p>
+        <footer>— The Witness</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+

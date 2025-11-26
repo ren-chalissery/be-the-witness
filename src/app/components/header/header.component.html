@@ -1,0 +1,26 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a routerLink="/" class="logo">
+          <h1>Be The Witness</h1>
+          <span class="subtitle">The Musical</span>
+        </a>
+        <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" [class.active]="isMenuOpen">
+          <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
+          <li><a routerLink="/welcome" (click)="closeMenu()">Welcome</a></li>
+          <li><a routerLink="/origins" (click)="closeMenu()">Origins</a></li>
+          <li><a routerLink="/songs" (click)="closeMenu()">Songs</a></li>
+          <li><a routerLink="/team" (click)="closeMenu()">Team</a></li>
+          <li><a routerLink="/prayer" (click)="closeMenu()">Prayer</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+

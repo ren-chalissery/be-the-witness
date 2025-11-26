@@ -1,0 +1,42 @@
+<section class="page-hero">
+  <div class="page-hero-image">
+    <img src="assets/images/WhatsApp Image 2025-11-04 at 15.42.24 (2).jpeg" alt="The Witness Team">
+    <div class="page-hero-overlay"></div>
+  </div>
+  <div class="page-hero-content">
+    <h1>The Witness</h1>
+    <p class="subtitle">Meet the teams behind the production</p>
+  </div>
+</section>
+
+<section class="section team-section">
+  <div class="container">
+    
+    <div class="team-content">
+      <div class="team-section-card fade-in">
+        <h2>{{ productionTeam.title }}</h2>
+        <div class="teams-grid">
+          <div class="team-card card" *ngFor="let team of productionTeam.teams">
+            <h3>{{ team.name }}</h3>
+            <ul class="team-roles">
+              <li *ngFor="let role of team.roles">{{ role }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-section-card fade-in">
+        <h2>{{ administrationTeam.title }}</h2>
+        <div class="teams-grid">
+          <div class="team-card card" *ngFor="let team of administrationTeam.teams">
+            <h3>{{ team.name }}</h3>
+            <ul class="team-roles">
+              <li *ngFor="let role of team.roles">{{ role }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,33 @@
+<section class="page-hero">
+  <div class="page-hero-image">
+    <img src="assets/images/WhatsApp Image 2025-11-04 at 15.42.23.jpeg" alt="The Witness Songs">
+    <div class="page-hero-overlay"></div>
+  </div>
+  <div class="page-hero-content">
+    <h1>Songs</h1>
+    <p class="subtitle">Experience the music and lyrics of The Witness</p>
+  </div>
+</section>
+
+<section class="section songs-section">
+  <div class="container">
+    <div class="songs-grid">
+      <div class="song-card card fade-in" *ngFor="let song of songs; let i = index">
+        <h2 class="song-title">{{ song.title }}</h2>
+        <div class="song-content">
+          <div class="song-quote" *ngIf="song.quote">
+            <p class="quote-text">{{ song.quote }}</p>
+          </div>
+          <div class="song-lyrics">
+            <p *ngFor="let line of song.lyrics" 
+               class="lyric-line"
+               [class.empty-line]="line === ''">
+              {{ line }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

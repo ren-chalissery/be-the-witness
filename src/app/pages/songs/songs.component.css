@@ -1,0 +1,144 @@
+.page-hero {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+}
+
+.page-hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.page-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(45, 122, 122, 0.75) 0%, rgba(217, 119, 87, 0.65) 100%);
+  z-index: 1;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.page-hero-content h1 {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-hero-content .subtitle {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.songs-section {
+  background-color: var(--bg-light);
+  min-height: 60vh;
+}
+
+.songs-grid {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.song-card {
+  background: var(--bg-white);
+  transition: all 0.3s ease;
+}
+
+.song-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.song-title {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+.song-content {
+  line-height: 1.9;
+}
+
+.song-quote {
+  background: var(--bg-light);
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+.quote-text {
+  font-style: italic;
+  color: var(--text-dark);
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.song-lyrics {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.lyric-line {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+.lyric-line.empty-line {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    height: 300px;
+  }
+
+  .page-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero-content .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .song-title {
+    font-size: 1.5rem;
+  }
+
+  .song-lyrics {
+    font-size: 1rem;
+  }
+}
+

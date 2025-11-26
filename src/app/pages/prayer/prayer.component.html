@@ -1,0 +1,18 @@
+<section class="section prayer-section">
+  <div class="container">
+    <div class="page-header">
+      <h1>{{ prayer.title }}</h1>
+    </div>
+    
+    <div class="prayer-card card fade-in">
+      <div class="prayer-content">
+        <p *ngFor="let line of prayer.content" 
+           class="prayer-line"
+           [class.empty-line]="line === ''">
+          {{ line }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+

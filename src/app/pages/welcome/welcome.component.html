@@ -1,0 +1,24 @@
+<section class="page-hero">
+  <div class="page-hero-image">
+    <img src="assets/images/WhatsApp Image 2025-11-04 at 15.42.24 (1).jpeg" alt="Welcome">
+    <div class="page-hero-overlay"></div>
+  </div>
+  <div class="page-hero-content">
+    <h1>Welcome</h1>
+    <p class="author-info">{{ welcome.author }}</p>
+    <p class="author-title">{{ welcome.title }}</p>
+  </div>
+</section>
+
+<section class="section welcome-section">
+  <div class="container">
+    <div class="card welcome-content fade-in">
+      <div class="content-body">
+        <p *ngFor="let paragraph of welcome.content" class="welcome-paragraph">
+          {{ paragraph }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+

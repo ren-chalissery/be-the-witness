@@ -1,0 +1,13 @@
+# Place your images here
+# 
+# You can reference images in your components like this:
+# 
+# In HTML:
+# <img src="assets/images/your-image.jpg" alt="Description">
+# 
+# In CSS:
+# background-image: url('/assets/images/your-image.jpg');
+# 
+# In TypeScript:
+# imagePath = 'assets/images/your-image.jpg';
+
