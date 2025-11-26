@@ -43,4 +43,7 @@ export class HomeComponent {
   openImage(imageSrc: string) {
     window.open(imageSrc, '_blank');
   }
+
+  websiteUrl = 'https://www.bethewitness.com.au/';
+  qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(this.websiteUrl)}`;
 }
