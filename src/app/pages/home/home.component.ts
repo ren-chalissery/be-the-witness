@@ -27,16 +27,14 @@ export class HomeComponent implements OnInit, OnDestroy {
   ];
 
   heroImages = [
-    'assets/images/main image.jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.41.28.jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.23 (1).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.23.jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.24 (1).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.24 (2).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.24 (3).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.24.jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.25 (1).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.25.jpeg'
+    'assets/images/Image A.png',
+    'assets/images/Image B.jpg',
+    'assets/images/Image C.png',
+    'assets/images/Image D.png',
+    'assets/images/Image E.jpg',
+    'assets/images/Image F.jpg',
+    'assets/images/Image G.png',
+    'assets/images/Image H.jpg'
   ];
 
   currentImageIndex = 0;
@@ -61,15 +59,14 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
   
   galleryImages = [
-    'assets/images/WhatsApp Image 2025-11-04 at 15.41.28.jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.23 (1).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.23.jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.24 (1).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.24 (2).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.24 (3).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.24.jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.25 (1).jpeg',
-    'assets/images/WhatsApp Image 2025-11-04 at 15.42.25.jpeg'
+    'assets/images/Image A.png',
+    'assets/images/Image B.jpg',
+    'assets/images/Image C.png',
+    'assets/images/Image D.png',
+    'assets/images/Image E.jpg',
+    'assets/images/Image F.jpg',
+    'assets/images/Image G.png',
+    'assets/images/Image H.jpg'
   ];
 
   openImage(imageSrc: string) {
