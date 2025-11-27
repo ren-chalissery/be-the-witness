@@ -1,23 +1,28 @@
 <section class="hero">
-  <div class="hero-background">
-    <img [src]="mainImage" alt="Be The Witness" class="hero-image">
-    <div class="hero-overlay"></div>
-  </div>
-  <div class="hero-content">
-    <h1 class="hero-title">{{ heroTitle }}</h1>
-    <p class="hero-subtitle">{{ heroSubtitle }}</p>
-    <div class="hero-cta">
-      <a routerLink="/welcome" class="btn">Get Started</a>
-      <a routerLink="/songs" class="btn btn-secondary">Explore Songs</a>
+  <div class="hero-slider">
+    <div class="hero-slide" *ngFor="let image of heroImages; let i = index" 
+         [class.active]="i === currentImageIndex"
+         [class.prev]="i === previousImageIndex && i !== currentImageIndex">
+      <img [src]="image" alt="Be The Witness" class="hero-image">
     </div>
   </div>
-</section>
-
-<section class="section experience-section">
-  <div class="container">
-    <div class="card fade-in">
-      <h2>{{ experience.title }}</h2>
-      <p class="lead">{{ experience.description }}</p>
+  <div class="hero-content-wrapper">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-title-be">Be</span> <span class="hero-title-rest">The Witness</span>
+      </h1>
+      <p class="hero-subtitle">{{ heroSubtitle }}</p>
+      <div class="hero-cta">
+        <a routerLink="/welcome" class="btn">Get Started</a>
+      </div>
+    </div>
+  </div>
+  <div class="experience-overlay">
+    <div class="container">
+      <div class="experience-card fade-in">
+        <h2>{{ experience.title }}</h2>
+        <p class="lead">{{ experience.description }}</p>
+      </div>
     </div>
   </div>
 </section>

@@ -1,10 +1,11 @@
 .header {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: white;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .navbar {
@@ -20,6 +21,7 @@
 .logo {
   text-decoration: none;
   color: white;
+  text-align: left;
 }
 
 .logo h1 {
@@ -28,6 +30,23 @@
   color: white;
   font-weight: 900;
   font-family: 'Adlery Pro', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3em;
+  letter-spacing: 0.1em;
+}
+
+.logo-be {
+  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.7);
+  filter: blur(0.3px);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.logo-rest {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .logo .subtitle {
@@ -63,6 +82,7 @@
   height: 2px;
   background-color: var(--accent-color);
   transition: width 0.3s ease;
+  box-shadow: 0 2px 4px rgba(212, 175, 55, 0.5);
 }
 
 .nav-menu a:hover::after,
@@ -79,14 +99,14 @@
 }
 
 .btn-enquiry {
-  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-warm) 100%);
+  background: linear-gradient(135deg, var(--accent-color) 0%, #E5C85A 100%);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: 600;
-  box-shadow: 0 4px 15px rgba(217, 119, 87, 0.4);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
@@ -95,9 +115,9 @@
 }
 
 .btn-enquiry:hover {
-  background: linear-gradient(135deg, var(--accent-warm) 0%, #f5b882 100%);
+  background: linear-gradient(135deg, #E5C85A 0%, #F0D575 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(217, 119, 87, 0.6);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
   opacity: 1;
 }
 
@@ -128,6 +148,13 @@
 }
 
 @media (max-width: 768px) {
+  .logo h1 {
+    font-size: 1.8rem;
+    flex-direction: row;
+    gap: 0.3em;
+    white-space: nowrap;
+  }
+
   .menu-toggle {
     display: flex;
   }
@@ -202,13 +229,13 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-warm) 100%);
+    background: linear-gradient(135deg, var(--accent-color) 0%, #E5C85A 100%);
     color: white;
     padding: 16px 32px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 1rem;
-    box-shadow: 0 8px 25px rgba(217, 119, 87, 0.6), 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6), 0 4px 10px rgba(0, 0, 0, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.4);
     text-decoration: none;
     text-align: center;
@@ -224,9 +251,9 @@
 
   .mobile-enquiry-btn:hover,
   .mobile-enquiry-btn:active {
-    background: linear-gradient(135deg, var(--accent-warm) 0%, #f5b882 100%);
+    background: linear-gradient(135deg, #E5C85A 0%, #F0D575 100%);
     transform: translateX(-50%) translateY(-3px);
-    box-shadow: 0 10px 30px rgba(217, 119, 87, 0.7), 0 6px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.7), 0 6px 15px rgba(0, 0, 0, 0.4);
   }
 }
 
